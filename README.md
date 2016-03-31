@@ -1,0 +1,1 @@
+Just a splash page
