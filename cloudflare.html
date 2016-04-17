@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <title>Beep Boop - Offline</title>
+  <style>
+  html {
+    background: url(background.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .almost-centered {
+      position: fixed;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  #splash {
+    text-align: center;
+    opacity: 0.8;
+    padding: 50px;
+  }
+
+  img {
+    width: 250px;
+  }
+
+  p {
+    margin-top: 15px;
+    color: #fff;
+  }
+  </style>
+
+</head>
+<body>
+    <div id="splash" class="almost-centered">
+      <img src="away.png">
+    </div>
+    <h3 style="display: none;">::CLOUDFLARE_ERROR_500S_BOX::</h3>
+    <h3 style="display: none;">::CLOUDFLARE_ERROR_1000S_BOX::</h3>
+</body>
+<script>
+  if (document.location.hostname === 'beepboophq.com') {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-70429813-1', 'auto');
+    ga('send', 'pageview', '/away');
+  }
+</script>
+</html>
